@@ -97,5 +97,26 @@ bin_centers = 0.5 * (binEdges[:-1] + binEdges[1:])
 yerr = np.sqrt(y)
 width = np.diff(binEdges)
 ax.bar(bin_centers, y, width=width, yerr=yerr)
-plt.show()
 # Hat eine UNabhängigkeit von seed.......
+# Kreiere scatter.plot
+# c ist x[j], d ist x[j+1], e ist x[j+2]
+print(c[1:])
+c_2d = c[:-1]
+d = c[1:]
+fig2, ax2 = plt.subplots(constrained_layout=True)
+
+ax2.scatter(
+    c_2d,
+    d,
+    s=5,  # smaller dots,
+    alpha=0.2,  # some transparency for this many points
+    linewidth=0,  # no border around points
+)
+fig3 = plt.figure()
+ax3 = fig3.add_subplot(1, 1, 1, projection="3d")
+c_3d = c[:-2]
+d_3d = d[:-1]
+e = c[2:]
+ax3.scatter(c_3d, d_3d, e, s=5, alpha=0.3)
+
+plt.show()
