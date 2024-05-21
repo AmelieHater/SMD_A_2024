@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from numpy.random import default_rng
 
 # Das ist die Aufgabe 5 aus Sheet03
 
@@ -120,3 +121,5 @@ e = c[2:]
 ax3.scatter(c_3d, d_3d, e, s=5, alpha=0.3)
 
 plt.show()
+
+# Für e) nutze diesselben Plots nur mit  np.random.default_rng
