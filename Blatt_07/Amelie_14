@@ -7,4 +7,4 @@ Diese Analyse wird in folgenden Schritten durchgeführt:
 4. Die Eigenvektoren und Eigenwerte sortieren in absteigender Reihenfolge bezogen auf den Eigenwert. 
 5. Den originalen Datensatz durch den größten Eigenwert k transformieren. 
 Dies passiert dadurch, dass Z = W^T \cdot X' gilt. Z sind die neuen transformierten Daten, V ist die Matrix, die aus den Eigenvektoren besteht und X' sind die originalen Daten, die schon zentralisiert wurden.
-
+kleine Änderung
